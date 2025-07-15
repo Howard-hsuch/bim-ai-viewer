@@ -36,12 +36,12 @@ export default function App() {
     ifcLoaderRef.current.settings.webIfc.wasm = { path: "/ifc-wasm/" };
 
     // 🟣 顯示紫色立方體（目前先註解掉）
-    /*
+    
     const material = new THREE.MeshLambertMaterial({ color: "#6528D7" });
     const geometry = new THREE.BoxGeometry();
     const cube = new THREE.Mesh(geometry, material);
     world.scene.three.add(cube);
-    */
+    
 
     // ✅ 綁定拖曳事件
     const handleDrop = async (event) => {
